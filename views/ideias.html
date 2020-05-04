@@ -1,0 +1,32 @@
+   {% extends "layout.html" %}
+   {% set bodyClass = "page-ideias" %}
+    
+    {% block title %}
+     <title>Ideias - Casa Criativa</title> 
+     {% endblock title %}
+       
+    {% block content %}
+    <header>
+      <a href="/">
+        <img src="./img/logo.png" alt="Casa Criativa">
+      </a>
+      <nav>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#" onclick="onOff()">Nova ideia</a></li>
+      </nav>
+    </header>
+    <section id="title">
+      <p>em exibição</p>
+      <h1>Ideias</h1>
+    </section>
+    <main>
+      <section id="ideas">
+        {% include "all_ideias.html" %}
+      </section>
+    </main>
+    <footer>com &#x2764; <a href="https://feliperibeiro.art.br" target="_blank">Felipe Ribeiro</a> </footer>
+  </div>
+
+  {% endblock %}
+
+  

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<section id="intro">
+  <header>
+    <a href="/">
+      <img src="./img/logo.png" alt="Casa Criativa">
+    </a>
+  </header>
+
+  <main>
+    <p>
+      Ficar em casa en períodos longos não é nada fácil.
+    </p>
+    <p>
+      Por isso, iremos catalogar idéias, <strong>filmes, livros
+        e dicas</strong> para tornar esse momento mais ineteressante.
+    </p>
+
+    <p>Comece clicando em ver ideias para ver as ideias cadastradas
+      e contribua adicionando a sua ideia.
+    </p>
+  </main>
+  <section id="buttons">
+    <button class="btn" onclick="onOff()">+ Adicionar ideia</button>
+    <a href="/ideias" class="button">Ver ideias</a>
+  </section>
+
+  <footer>com &#x2764; <a href="https://feliperibeiro.art.br" target="_blank">Felipe Ribeiro</a> </footer>
+
+</section>
+<section id="lat-ideias   ">
+  {% include "all_ideias.html" %}
+</section>
+{% endblock %}
